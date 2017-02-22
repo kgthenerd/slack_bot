@@ -14,7 +14,7 @@ const senseHost = "rd-kop-win12.rdlund.qliktech.com";
 const prefix = "/slack/";
 
 var bot = new slackbot({
-    token: "xoxb-144199859111-ZaORzLaMvr1QElWTco726II1",
+    token: process.env.SLACK_API_KEY,
     name: "QlikBot"
 });
 
