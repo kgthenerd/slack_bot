@@ -9,8 +9,8 @@ const Q = require('q');
 const fs = require('fs');
 const path = require('path');
 
-const certPath = '/Users/kop/Dev/slack_bot/certs/rd-kop.rdlund.qliktech.com';
-const senseHost = "rd-kop-win12.rdlund.qliktech.com";
+const certPath = process.env.CERT_PATH;
+const senseHost = process.env.SENSE_HOST;
 const prefix = "/slack/";
 
 var bot = new slackbot({
